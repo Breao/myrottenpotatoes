@@ -35,10 +35,12 @@ gem 'jquery-rails'
 # gem 'capistrano'
 gem 'haml'
 # To use debugger
-group :development ,:test do
+group :development, :test do
   gem 'debugger', group: [:development, :test]
   gem 'sqlite3'
 end
+
+gme 'rails_12factor'
 
 group :production do
   gem 'pg'
